@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.Game{
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 20px;
+  background-color: crimson;
+
+}
+.grid{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 70px;
+  background-color: blue;
+  color: white;
+}
+h1 {
+  font-size: 68px;
+  margin-bottom: 10px;
+  color: darkturquoise;
+}
+.bigbox{
+  width: 30%;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+}
+.Game button {
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: indigo;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+#msg{
+
+
+}
+.hide{
+  display: none;
+}
+
