@@ -1,43 +1,51 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class ="msg-container hide">
-        <p id="msg">
-            Winner
-        </p>
+  <main>
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
     </div>
-    <main>
-        <div class="container">
-        <div class="bigbox">
-        
-        </div>  
-        <div class="grid">
-        <h1>Tic Tac Toe</h1> 
-        <div class="Game">  
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+    <div class="container">
+      <div class="bigbox">
+        <button id="modeBtn">Play vs Computer</button>
+        <div class="rules">
+          <h2>Game Rules</h2>
+          <ul>
+            <li>Click a square to place your symbol (X or O).</li>
+            <li>Three in a row (horizontal, vertical, diagonal) wins.</li>
+            <li>Use the toggle to switch between Player vs Player or Computer.</li>
+            <li>The game will reset after a win or a draw.</li>
+          </ul>
         </div>
+        <div class="instructions">
+          <h3>Game Instructions</h3>
+          <p>This is a 3x3 grid game. You can play against a friend or the computer. Use the button above to toggle modes. Make your move and see if you can win!</p>
+          <p>Computer moves are random. The game will notify you of a winner or a draw with a popup and reset automatically.</p>
         </div>
+      </div>
+      <div class="grid">
+        <h1>Tic Tac Toe</h1>
+        <div class="Game" id="gameBoard">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
         </div>
-
-    
-        
-
-
-    </main>
-    <script src="app.js"></script>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>

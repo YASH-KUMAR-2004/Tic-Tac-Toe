@@ -1,23 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  transition: background-color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #004d00;
+}
+
 .container {
   display: flex;
   height: 100vh;
   width: 100%;
   overflow: hidden;
 }
-.Game{
+
+.Game {
   display: grid;
   grid-template-columns: repeat(3, 150px);
   grid-template-rows: repeat(3, 150px);
   gap: 20px;
   background-color: crimson;
-
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
-.grid{
+
+.grid {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -27,17 +39,56 @@
   background-color: blue;
   color: white;
 }
+
 h1 {
   font-size: 68px;
   margin-bottom: 10px;
   color: darkturquoise;
 }
-.bigbox{
+
+.bigbox {
   width: 30%;
-  background-color: #333;
+  background-color: #1a1a1a;
   color: white;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
 }
+
+.rules {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+
+.rules h2 {
+  margin-bottom: 10px;
+  color: #00d9ff;
+}
+
+.rules ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.5rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.instructions {
+  background-color: #292929;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.5rem;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
 .Game button {
   font-size: 6.5rem;
   font-weight: bold;
@@ -45,12 +96,33 @@ h1 {
   background-color: white;
   border: 2px solid white;
   cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
 }
-#msg{
 
-
+.Game button:hover {
+  background-color: #f0f0f0;
 }
-.hide{
+
+.msg-container {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
+#modeBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: darkturquoise;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#modeBtn:hover {
+  background-color: #00b7cc;
+}
